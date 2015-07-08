@@ -1,6 +1,6 @@
 {
   "name": "obj-to-table",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Create a table from an array of objects",
   "license": "MIT",
   "repository": "kevva/obj-to-table",
