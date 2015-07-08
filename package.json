@@ -1,0 +1,39 @@
+{
+  "name": "obj-to-table",
+  "version": "1.0.0",
+  "description": "Create a table from an array of objects",
+  "license": "MIT",
+  "repository": "kevva/obj-to-table",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Martensson",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "array",
+    "cli",
+    "convert",
+    "object",
+    "table"
+  ],
+  "dependencies": {
+    "cli-table": "^0.3.1",
+    "deep-equal": "^1.0.0",
+    "fill-array": "^1.0.0",
+    "object-assign": "^3.0.0",
+    "object-values": "^1.0.0",
+    "window-size": "^0.1.2"
+  },
+  "devDependencies": {
+    "ava": "^0.0.4"
+  }
+}
