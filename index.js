@@ -21,7 +21,7 @@ module.exports = function (arr, opts) {
 		}
 	}
 
-	var width = Math.floor(windowSize.width / (keys.length + 4));
+	var width = Math.floor(windowSize.width / (keys.length + 1));
 	var table = new CliTable(objectAssign({
 		head: keys,
 		colWidths: fillArray([width], keys.length)
