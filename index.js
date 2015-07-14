@@ -4,9 +4,10 @@ var fillArray = require('fill-array');
 var objectAssign = require('object-assign');
 var objectValues = require('object-values');
 var windowSize = require('window-size');
+var arrify = require('arrify');
 
 module.exports = function (arr, opts) {
-	arr = Array.isArray(arr) ? arr : [arr];
+	arr = arrify(arr);
 
 	var keys = [];
 	var vals = [];
