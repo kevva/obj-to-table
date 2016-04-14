@@ -13,9 +13,9 @@ $ npm install --save obj-to-table
 ## Usage
 
 ```js
-var objToTable = require('obj-to-table');
+const objToTable = require('obj-to-table');
 
-var table = objToTable([{
+const table = objToTable([{
 	foo: 'bar',
 	cat: 'meow',
 	unicorn: 'moo'
