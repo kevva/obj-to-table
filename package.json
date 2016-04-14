@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "node test.js"
+    "test": "ava"
   },
   "files": [
     "index.js"
@@ -28,13 +28,12 @@
   "dependencies": {
     "arrify": "^1.0.0",
     "cli-table": "^0.3.1",
-    "deep-equal": "^1.0.0",
     "fill-array": "^1.0.0",
     "object-assign": "^3.0.0",
     "object-values": "^1.0.0",
     "window-size": "^0.1.2"
   },
   "devDependencies": {
-    "ava": "^0.0.4"
+    "ava": "*"
   }
 }

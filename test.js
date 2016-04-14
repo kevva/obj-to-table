@@ -1,10 +1,8 @@
-'use strict';
-var deepEqual = require('deep-equal');
-var test = require('ava');
-var objToTable = require('./');
+import test from 'ava';
+import fn from './';
 
-test(function (t) {
-	var table = objToTable([{
+test(t => {
+	const table = fn([{
 		foo: 'bar',
 		cat: 'meow',
 		unicorn: 'moo'
@@ -18,8 +16,7 @@ test(function (t) {
 		unicorn: 'hum'
 	}]);
 
-	t.assert(deepEqual(table[0], ['bar', 'meow', 'moo']));
-	t.assert(deepEqual(table[1], ['crow', 'eek', 'buzz']));
-	t.assert(deepEqual(table[2], ['ow', 'hee-haw', 'hum']));
-	t.end();
+	t.deepEqual(table[0], ['bar', 'meow', 'moo']);
+	t.deepEqual(table[1], ['crow', 'eek', 'buzz']);
+	t.deepEqual(table[2], ['ow', 'hee-haw', 'hum']);
 });
