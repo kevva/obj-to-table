@@ -2,7 +2,7 @@
 const CliTable = require('cli-table');
 const fillArray = require('fill-array');
 const objectValues = require('object-values');
-const windowSize = require('window-size');
+const termSize = require('term-size');
 const arrify = require('arrify');
 
 module.exports = (input, opts) => {
@@ -21,7 +21,7 @@ module.exports = (input, opts) => {
 		}
 	}
 
-	const width = Math.floor(windowSize.width / (keys.length + 1));
+	const width = Math.floor(termSize.columns / (keys.length + 1));
 	const table = new CliTable(Object.assign({
 		head: keys,
 		colWidths: fillArray([width], keys.length)
