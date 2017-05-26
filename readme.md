@@ -51,14 +51,13 @@ console.log(table.toString());
 
 #### data
 
-*Required*  
-Type: `array`, `object`
+Type: `Array` `Object`
 
 An array of objects containing your data.
 
 #### options
 
-Type: `object`
+Type: `Object`
 
 See the [cli-table](https://github.com/Automattic/cli-table) options.
 

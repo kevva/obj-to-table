@@ -1,35 +1,34 @@
 'use strict';
-var CliTable = require('cli-table');
-var fillArray = require('fill-array');
-var objectAssign = require('object-assign');
-var objectValues = require('object-values');
-var windowSize = require('window-size');
-var arrify = require('arrify');
+const CliTable = require('cli-table');
+const fillArray = require('fill-array');
+const objectValues = require('object-values');
+const windowSize = require('window-size');
+const arrify = require('arrify');
 
-module.exports = function (arr, opts) {
-	arr = arrify(arr);
+module.exports = (input, opts) => {
+	input = arrify(input);
 
-	var keys = [];
-	var vals = [];
+	const keys = [];
+	const vals = [];
 
-	for (var i = 0; i < arr.length; i++) {
-		vals.push(objectValues(arr[i]));
+	for (const x of input) {
+		vals.push(objectValues(x));
 
-		for (var key in arr[i]) {
-			if (keys.indexOf(key) === -1) {
-				keys.push(key);
+		for (const y of Object.keys(x)) {
+			if (keys.indexOf(y) === -1) {
+				keys.push(y);
 			}
 		}
 	}
 
-	var width = Math.floor(windowSize.width / (keys.length + 1));
-	var table = new CliTable(objectAssign({
+	const width = Math.floor(windowSize.width / (keys.length + 1));
+	const table = new CliTable(Object.assign({
 		head: keys,
 		colWidths: fillArray([width], keys.length)
 	}, opts));
 
-	for (var j = 0; j < vals.length; j++) {
-		table.push(vals[j]);
+	for (const x of vals) {
+		table.push(x);
 	}
 
 	return table;

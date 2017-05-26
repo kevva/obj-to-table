@@ -1,8 +1,8 @@
 import test from 'ava';
-import fn from './';
+import fn from '.';
 
 test(t => {
-	const table = fn([{
+	const [tab1, tab2, tab3] = fn([{
 		foo: 'bar',
 		cat: 'meow',
 		unicorn: 'moo'
@@ -16,7 +16,7 @@ test(t => {
 		unicorn: 'hum'
 	}]);
 
-	t.deepEqual(table[0], ['bar', 'meow', 'moo']);
-	t.deepEqual(table[1], ['crow', 'eek', 'buzz']);
-	t.deepEqual(table[2], ['ow', 'hee-haw', 'hum']);
+	t.deepEqual(tab1, ['bar', 'meow', 'moo']);
+	t.deepEqual(tab2, ['crow', 'eek', 'buzz']);
+	t.deepEqual(tab3, ['ow', 'hee-haw', 'hum']);
 });
