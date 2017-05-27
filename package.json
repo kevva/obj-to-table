@@ -1,39 +1,39 @@
 {
-	"name": "obj-to-table",
-	"version": "1.0.1",
-	"description": "Create a table from an array of objects",
-	"license": "MIT",
-	"repository": "kevva/obj-to-table",
-	"author": {
-		"email": "kevinmartensson@gmail.com",
-		"name": "Kevin Martensson",
-		"url": "github.com/kevva"
-	},
-	"engines": {
-		"node": ">=4"
-	},
-	"scripts": {
-		"test": "xo && ava"
-	},
-	"files": [
-		"index.js"
-	],
-	"keywords": [
-		"array",
-		"cli",
-		"convert",
-		"object",
-		"table"
-	],
-	"dependencies": {
-		"arrify": "^1.0.0",
-		"cli-table": "^0.3.1",
-		"fill-array": "^1.0.0",
-		"object-values": "^1.0.0",
-		"term-size": "^1.1.0"
-	},
-	"devDependencies": {
-		"ava": "*",
-		"xo": "*"
-	}
+  "name": "obj-to-table",
+  "version": "2.0.0",
+  "description": "Create a table from an array of objects",
+  "license": "MIT",
+  "repository": "kevva/obj-to-table",
+  "author": {
+    "email": "kevinmartensson@gmail.com",
+    "name": "Kevin Martensson",
+    "url": "github.com/kevva"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "array",
+    "cli",
+    "convert",
+    "object",
+    "table"
+  ],
+  "dependencies": {
+    "arrify": "^1.0.0",
+    "cli-table": "^0.3.1",
+    "fill-array": "^1.0.0",
+    "object-values": "^1.0.0",
+    "term-size": "^1.1.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
 }
